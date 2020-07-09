@@ -1,0 +1,29 @@
+public class practical4q1test {
+
+    public static void main(String [] args) {
+    	Employee emp1 = new Employee("Thomas", 10.00);
+    	Employee emp2 = new Employee("Thomus");
+    	emp2.setSalary(100.00);
+    	
+    	/*part c*/
+    	if(emp1.getSalary()>emp2.getSalary()) {
+    		System.out.println(emp1.getName() + " " + emp1.getSalary());
+    	}
+    	else {
+    		System.out.println(emp2.getName() + " " + emp2.getSalary());
+    	}
+    	
+    	System.out.println("Total: " + emp1.getSalary() + " + " + emp2.getSalary() + " = " + (emp1.getSalary() + emp2.getSalary()));
+    	
+    	/*part b*/
+    	System.out.println("Salary: " + emp1.salary);
+    	System.out.println("Salary: " + emp1.getSalary());
+    	
+    	emp1.raiseSalary(8.0);
+    	
+    	System.out.println("Salary: " + emp1.salary);
+    	System.out.println("Salary: " + emp1.getSalary());
+    }
+    
+    
+}
